@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/ @5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+   <script src="jquery-3.6.0.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="wdt app.js"></script>
+    <title>-Staff Clock Management-</title>
+    <a href = "https://randomuser.me"></a>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wdt.css">
+    </head>
+<body>
+ <div class="navbar">
+ <div class="dropdown">
+ <button class="dropbtn">Dashboard <i class="fa fa-caret-down"></i></button>
+</div> 
+<div class="dropdown">
+        <button class="dropbtn">Inventory 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Search</a>
+            <a href="#">Add</a>
+            <a href="#">Remove</a>
+        </div>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">Orders 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Search</a>
+            <a href="#">Add</a>
+            <a href="#">Remove</a>
+        </div>
+    </div> 
+</div>
+<div>
+    <h1>Reception Management Dashboard Staff</h1>
+    <table id="staffTable" class="Table1" border="0.1">
+<thead><th>Picture</th>
+  <th>Name</th>
+  <th>Surname</th>
+  <th>Email adress</th>
+  <th>Status</th>
+  <th>Out Time</th>
+  <th>Duration</th>
+  <th>Expected Return</th>                
+</thead>        
+<tr>  
+  <td class="clickable" onclick="cellClicked" id="1"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+ </tr>
+
+ <tr>  
+   <td class="clickable" onclick="cellClicked"id="2"></td>   
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+  </tr>
+
+   <tr>
+   <td id="3"></td>
+   <td ></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   </tr>
+
+   <tr>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+  <td class="clickable" onclick="cellClicked"></td>
+   </tr> 
+          
+   <tr>
+   <td class="clickable" onclick="cellClicked"id="5"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+   <td class="clickable" onclick="cellClicked"></td>
+    </tr> 
+                         
+    </table>
+    </div>
+    <div>
+    <button onclick="changeStyle()" class="Inbutton">In</button>
+    <script>
+     
+    </script>
+       <button id="Out" onclick="Out" class="Outbutton">Out</button>
+       <h2>Schedule Delivery</h2>
+
+      </div>
+      <div>
+      <table onclick="ToggleEdit" id="scheduleDelivery">
+    <thead>
+      <tr>
+          <th>Vehicle:</th>
+          <th>Name:</th>
+          <th>Surname:</th>
+          <th>Telephone</th>
+          <th>Adress:</th>
+          <th>Return time:</th>
+      </tr>
+  </thead>
+  <tr>
+    <td>-----</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+    
+  </tr>
+      </table>
+      <div>
+        <button class="Addbutton">Add</button>
+      
+        <h3>Delivery Board</h3>
+      <table>
+    <thead>
+      <tr>
+          <th>Vehicle:</th>
+          <th>Name:</th>
+          <th>Surname:</th>
+          <th>Telephone</th>
+          <th>Delivery Adress:</th>
+          <th>Return time:</th>
+      </tr>
+  </thead>
+  <tr>
+    <td>-----</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+    <td>------</td>
+      </tr>
+      </table> 
+      <button  class="Clearbutton">Clear</button>
+      <span id="datetime"></span>    
+
+    
+      </div>
+      <div>
+
+     </div>
+
+</body>
+</html>
